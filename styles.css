@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap");
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .card {
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+.card__picture {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__picture__img {
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+  margin-bottom: 0;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .card__picture__img {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .card__picture {
+    width: 50%;
+  }
+}
+.card__content {
+  flex: 1;
+  background-color: hsl(0, 0%, 100%);
+  padding: 5%;
+}
+@media (min-width: 768px) {
+  .card__content {
+    width: 50%;
+  }
+}
+.card__content__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: hsl(228, 12%, 48%);
+}
+.card__content__header {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.card__content__description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+}
+.card__content__price-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.card__content__price-container__old-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.card__content__price-container__new-price {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+  margin-right: 5%;
+}
+.card__content__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+}
+.card__content__button__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  margin-left: 2.5%;
+}
+
+/*# sourceMappingURL=styles.css.map */
